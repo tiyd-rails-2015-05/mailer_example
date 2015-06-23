@@ -1,0 +1,12 @@
+<h1>StatsMailer#report</h1>
+
+<p>
+  <%= @greeting %>, find me in app/views/stats_mailer/report.html.erb
+
+  <%= @family.name %>
+  <%= @family.genus %>
+  <%= @family.species %>
+  <%= @family.created_at %>
+  <%= 28000000 * (Time.now - @family.created_at)/(24*60*60) %> pounds of french fries
+
+</p>

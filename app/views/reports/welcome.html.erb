@@ -1,0 +1,10 @@
+<h1>Welcome</h1>
+<p>enter your email address and pick species</p>
+
+<%= form_tag reports_thank_you_path do %>
+  <%= text_field_tag 'email', nil, placeholder: "Email" %>
+  <%= text_field_tag 'species', nil, placeholder: "Species" %>
+
+  <%= submit_tag %>
+
+<% end %>

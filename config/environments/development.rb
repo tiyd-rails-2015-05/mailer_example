@@ -19,7 +19,7 @@ Rails.application.configure do
     port:                 587,
     domain:               'example.com',
     user_name:            'mason.matthews@theironyard.com',
-    password:             'SUPERSECRETPASSWORD',
+    password:             ENV["GMAIL_PASSWORD"],
     authentication:       'plain',
     enable_starttls_auto: true  }
   config.action_mailer.perform_deliveries = true
