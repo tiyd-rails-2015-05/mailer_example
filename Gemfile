@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+gem 'paperclip'
+gem 'aws-sdk', '~> 1.6'
+
 gem 'delayed_job_active_record'
 gem 'daemons'
 

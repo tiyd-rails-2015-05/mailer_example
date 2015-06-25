@@ -1,9 +1,10 @@
 <h1>Welcome</h1>
 <p>enter your email address and pick species</p>
 
-<%= form_tag reports_thank_you_path do %>
-  <%= text_field_tag 'email', nil, placeholder: "Email" %>
-  <%= text_field_tag 'species', nil, placeholder: "Species" %>
+<%= form_tag reports_thank_you_path, multipart: true do %>
+  <%= text_field_tag 'name', nil, placeholder: "Name" %><br/>
+  <%= text_field_tag 'species', nil, placeholder: "Species" %><br/>
+  <%= file_field_tag 'uploaded_file' %><br/>
 
   <%= submit_tag %>
 
